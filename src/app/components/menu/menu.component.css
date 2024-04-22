@@ -1,0 +1,231 @@
+@media only screen and (min-width: 1192px) {
+  .checkbox {
+    display: none;
+  }
+  .menu-container {
+    width: 252px;
+    height: 1087px;
+    display: flex;
+    /* position: relative;  Menu style is only refereced using divs of homePage, so we need to adapt it*/
+    align-items: flex-start;
+    flex-direction: column;
+    left: 0;
+    z-index: 2;
+  }
+  .menu-options-frame {
+    left: -3px;
+    width: 252px;
+    top: 84px;
+    bottom: 46px;
+    height: 1024px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(217, 4, 22, 1);
+  }
+
+  .button-home {
+    top: 76px;
+    left: 23px;
+    position: absolute;
+  }
+  .button-liked {
+    top: 158px;
+    left: 23px;
+    position: absolute;
+  }
+  .button-connect {
+    top: 240px;
+    left: 23px;
+    position: absolute;
+  }
+  .button-rounded {
+    width: 186px;
+    height: 44px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(217, 182, 139, 1);
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: inline-block;
+    color: #680d0d; /* text color*/
+    padding: 0px 20px;
+    border: none;
+
+  }
+
+  .button-rounded:hover {
+    background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1191px) {
+  .checkbox {
+    display: none;
+  }
+  .menu-container {
+    width: 232px;
+    height: 700px;
+    display: flex;
+    /* position: relative;  Menu style is only refereced using divs of homePage, so we need to adapt it*/
+    align-items: flex-start;
+    flex-direction: column;
+    left: 0;
+  }
+  .menu-options-frame {
+    left: -3px;
+    width: 232px;
+    top: 80px;
+    bottom: 46px;
+    height: 700px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(217, 4, 22, 1);
+  }
+
+  .button-home {
+    top: 76px;
+    left: 23px;
+    position: absolute;
+  }
+  .button-liked {
+    top: 158px;
+    left: 23px;
+    position: absolute;
+  }
+  .button-connect {
+    top: 240px;
+    left: 23px;
+    position: absolute;
+  }
+  .button-rounded {
+    width: 186px;
+    height: 44px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(217, 182, 139, 1);
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: inline-block;
+    color: #680d0d; /* text color*/
+    padding: 0px 20px;
+    border: none;
+
+  }
+
+  .button-rounded:hover {
+    background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
+  }
+
+}
+@media only screen and (max-width: 600px) {
+  .checkbox {
+
+    top: 11px;
+    left: 190px;
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    align-self: center;
+  }
+  .btn{
+
+    top: 11px;
+    left: 138px;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    align-self: center;
+  }
+  #menuToggleButton:checked + label > .menu-options-frame {
+    left: 0;
+    top: 69px;
+    bottom: 46px;
+    width: 360px;
+    height: 245px;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgb(14, 35, 68);
+  }
+  #menuToggleButton:checked > .menu-options-frame {
+    left: 0;
+    top: 69px;
+    bottom: 46px;
+    width: 360px;
+    height: 245px;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgb(14, 35, 68);
+  }
+  .menu-container {
+    width: 360px;
+    height: 245px;
+    display: flex;
+    top: 69px;
+    align-items: flex-start;
+    flex-direction: column;
+    left: 0;
+  }
+  .menu-options-frame {
+    left: 0;
+    top: 69px;
+    bottom: 46px;
+    width: 360px;
+    height: 245px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(217, 4, 22, 1);
+  }
+
+  .button-home {
+    top: 96px;
+    left: 41px;
+    position: absolute;
+  }
+  .button-liked {
+    top: 174px;
+    left: 41px;
+    position: absolute;
+  }
+  .button-connect {
+    top: 250px;
+    left: 41px;
+    position: absolute;
+  }
+  .button-rounded {
+    width: 279px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(217, 182, 139, 1);
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: inline-block;
+    color: #680d0d; /* text color*/
+    padding: 0px 20px;
+    border: none;
+    min-width: 0;
+  }
+
+  .button-rounded:hover {
+    background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
+  }
+
+}
