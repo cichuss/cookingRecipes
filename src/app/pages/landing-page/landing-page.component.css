@@ -1,0 +1,264 @@
+@media only screen and (min-width: 1192px){
+  .landing-page-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .landing-page-frame {
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(115, 2, 2, 1);
+  }
+  .landing-page-background2 {
+    top: 0px;
+    left: 0px;
+    width: 1174px;
+    height: 839px;
+    position: absolute;
+  }
+  .landing-page-background1 {
+    top: 0px;
+    left: 0px;
+    width: 1068px;
+    height: 763px;
+    position: absolute;
+  }
+  .landing-page-logo-placeholder {
+    top: 74px;
+    left: 118px;
+    width: 438px;
+    height: 438px;
+    position: absolute;
+  }
+  .landing-page-text {
+    top: 512px;
+    left: 926px;
+    color: rgba(242, 242, 242, 1);
+    width: 495px;
+    height: auto;
+    position: absolute;
+    font-size: 128px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Jolly Lodger;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .rounded-button {
+    width: 186px;
+    height: 25px;
+    background-color: #FFA500;
+    color: white; /* text color*/
+    padding: 0px 20px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    line-height: 25px;
+    transition-duration: 0.4s;
+  }
+
+  .reounded-button-login {
+    top: 698px;
+    left: 945px;
+    position: absolute;
+  }
+
+  .reounded-button-register {
+    top: 698px;
+    left: 1194px;
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1191px){
+  .landing-page-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    height: 834px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .landing-page-frame {
+    width: 100%;
+    height: 834px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(115, 2, 2, 1);
+  }
+  .landing-page-background2 {
+    top: 0px;
+    left: 0px;
+    width: 1174px;
+    height: 839px;
+    position: absolute;
+  }
+  .landing-page-background1 {
+    top: 0px;
+    left: 0px;
+    width: 1068px;
+    height: 763px;
+    position: absolute;
+  }
+  .landing-page-logo-placeholder {
+    top: 73px;
+    left: 101px;
+    width: 302px;
+    height: 302px;
+    position: absolute;
+  }
+  .landing-page-text {
+    top: 344px;
+    left: 557px;
+    color: rgba(242, 242, 242, 1);
+    width: 495px;
+    height: auto;
+    position: absolute;
+    font-size: 128px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Jolly Lodger;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .rounded-button {
+    width: 186px;
+    height: 25px;
+    background-color: #FFA500;
+    color: white; /* text color*/
+    padding: 0px 20px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    line-height: 25px;
+    transition-duration: 0.4s;
+  }
+
+  .reounded-button-login {
+    top: 505px;
+    left: 559px;
+    position: absolute;
+  }
+
+  .reounded-button-register {
+    top: 505px;
+    left: 823px;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 600px){
+  .landing-page-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    height: 800px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .landing-page-frame {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(115, 2, 2, 1);
+  }
+  .landing-page-background2 {
+    top: 0px;
+    left: 0px;
+    width: 360px;
+    height: 800px;
+    position: absolute;
+  }
+  .landing-page-background1 {
+    top: 0px;
+    left: 0px;
+    width: 360px;
+    height: 800px;
+    position: absolute;
+  }
+  .landing-page-logo-placeholder {
+    top: 166px;
+    left: 26px;
+    width: 302px;
+    height: 302px;
+    position: absolute;
+  }
+  .landing-page-text {
+    top: 70px;
+    left: 66px;
+    color: rgba(242, 242, 242, 1);
+    /*width: 495px;*/
+    height: auto;
+    position: absolute;
+    font-size: 64px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Jolly Lodger;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .rounded-button {
+    width: 214px;
+    height: 25px;
+    background-color: #FFA500;
+    color: white; /* text color*/
+    padding: 0px 20px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    line-height: 25px;
+    transition-duration: 0.4s;
+  }
+
+  .reounded-button-login {
+    top: 543px;
+    left: 74px;
+    position: absolute;
+  }
+
+  .reounded-button-register {
+    top: 616px;
+    left: 74px;
+    position: absolute;
+  }
+
+}
+
+
+
+

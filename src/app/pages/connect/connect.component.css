@@ -1,0 +1,288 @@
+@media only screen and (min-width: 1192px){
+  .connect-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .connect-frame43-conect03 {
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    background-color: rgba(217, 182, 139, 1);
+  }
+  .connect-button {
+    top: 512px;
+    left: 742px;
+    width: 186px;
+    height: 25px;
+    position: absolute;
+    border-radius: 500px;
+    cursor: pointer;
+    background-color: rgba(217, 4, 22, 1);
+    color: white;
+  }
+  .connect-button:hover {
+    background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
+  }
+  .connect-username {
+    top: 436px;
+    left: 620px;
+    width: 430px;
+    height: 25px;
+    position: absolute;
+    border-radius: 500px;
+  }
+  .username-text {
+    top: 380px;
+    left: 690px;
+    color: #680d0d;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .connect-poster01 {
+    top: 145px;
+    left: 319px;
+    width: 243px;
+    height: 360px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(12, 53, 89, 1);
+  }
+  .connect-poster01 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .connect-poster04 {
+    top: 145px;
+    left: 1107px;
+    width: 243px;
+    height: 360px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(217, 165, 102, 1);
+  }
+  .connect-poster04 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .connect-poster05 {
+    top: 525px;
+    left: 319px;
+    width: 243px;
+    height: 360px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(13, 13, 13, 1);
+  }
+  .connect-poster05 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .connect-poster08 {
+    top: 525px;
+    left: 1107px;
+    width: 243px;
+    height: 360px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(242, 203, 5, 1);
+  }
+  .connect-poster08 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .error-message {
+    top: 475px;
+    left: 730px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: center;
+    font-family: Inter;
+  }
+}
+/*---------------TABLET------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 1191px){
+  .connect-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .connect-frame43-conect03 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    background-color: rgba(217, 182, 139, 1);
+  }
+  .connect-button {
+    top: 428px;
+    left: 623px;
+    width: 186px;
+    height: 25px;
+    position: absolute;
+    border-radius: 500px;
+    cursor: pointer;
+    background-color: rgba(217, 4, 22, 1);
+    color: white;
+  }
+  .connect-button:hover {
+    background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
+  }
+  .connect-username {
+    top: 340px;
+    left: 501px;
+    width: 430px;
+    height: 25px;
+    position: absolute;
+    border-radius: 500px;
+  }
+  .username-text {
+    top: 284px;
+    left: 571px;
+    color: #680d0d;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .connect-poster01 {
+    top: 22px;
+    left: 274px;
+    width: 203px;
+    height: 320px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(12, 53, 89, 1);
+  }
+  .connect-poster01 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .connect-poster04 {
+    top: 22px;
+    left: 949px;
+    width: 203px;
+    height: 320px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(217, 165, 102, 1);
+  }
+  .connect-poster04 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .connect-poster05 {
+    top: 359px;
+    left: 274px;
+    width: 203px;
+    height: 320px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(13, 13, 13, 1);
+  }
+  .connect-poster05 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .connect-poster08 {
+    top: 359px;
+    left: 949px;
+    width: 203px;
+    height: 320px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(242, 203, 5, 1);
+  }
+  .connect-poster08 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .error-message {
+    top: 388px;
+    left: 609px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: center;
+    font-family: Inter;
+  }
+}
+
+@media only screen and (max-width: 600px){
+
+}
+
