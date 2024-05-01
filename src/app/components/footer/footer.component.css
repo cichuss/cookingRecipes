@@ -1,32 +1,37 @@
 @media only screen and (min-width: 1192px) {
   .footer-container {
     width: 100%;
-    height: 46px;
-    max-height: 46px;
+    height: 5vh;
+    max-height: 5vh;
     display: grid;
     position: relative;
     align-items: flex-start;
     flex-direction: column;
+    z-index: 2;
   }
   .footer-footer {
     width: 100%;
     height: 100%;
+    z-index: 2;
   }
   .footer-text {
-    top: 11px;
-    left: 624px;
+    /*top: 50%;*/
+    /*bottom: 20%;*/
+    /*left: 30%;*/
     color: rgb(117, 117, 117);
-    height: auto;
-    margin: auto;
+    /*height: auto;*/
+    margin-top: 1.5vh;
+    margin-left: 40%;
     position: static;
-    font-size: 16px;
-    align-self: center;
-    text-align: left;
+    font-size: 2vh;
+    /*align-self: center;*/
+    /*text-align: left;*/
     font-family: "Jolly Lodger";
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
     text-decoration: none;
+    z-index: 2;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1191px) {
@@ -38,10 +43,12 @@
     position: relative;
     align-items: flex-start;
     flex-direction: column;
+    z-index: 2;
   }
   .footer-footer {
     width: 100%;
     height: 100%;
+    z-index: 2;
   }
   .footer-text {
     top: 11px;
@@ -58,13 +65,15 @@
     line-height: normal;
     font-stretch: normal;
     text-decoration: none;
+    z-index: 2;
   }
 
 }
 @media only screen and (max-width: 600px) {
   .footer-container {
     width: 100%;
-    height: 35px;
+    height: 31px;
+    /*height: 15px;*/
     bottom: 0;
     max-height: 46px;
     display: grid;
@@ -83,7 +92,7 @@
     height: auto;
     margin: auto;
     position: static;
-    font-size: 16px;
+    font-size: 14px;
     align-self: center;
     text-align: left;
     font-family: "Jolly Lodger";

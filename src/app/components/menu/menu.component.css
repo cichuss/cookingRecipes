@@ -1,23 +1,24 @@
 @media only screen and (min-width: 1192px) {
-  .checkbox {
+  .menu2 {
     display: none;
   }
   .menu-container {
-    width: 252px;
-    height: 1087px;
+    width: 32vh;
+    height: 100%;
     display: flex;
     /* position: relative;  Menu style is only refereced using divs of homePage, so we need to adapt it*/
     align-items: flex-start;
     flex-direction: column;
     left: 0;
-    z-index: 2;
+    z-index: 1;
   }
   .menu-options-frame {
     left: -3px;
-    width: 252px;
+    width: 15vw;
     top: 84px;
     bottom: 46px;
-    height: 1024px;
+    height: 83.5vh;
+    min-height: 83.5vh;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -27,24 +28,21 @@
   }
 
   .button-home {
-    top: 76px;
-    left: 23px;
+    top: 10vh;
     position: absolute;
   }
   .button-liked {
-    top: 158px;
-    left: 23px;
+    top: 20vh;
     position: absolute;
   }
   .button-connect {
-    top: 240px;
-    left: 23px;
+    top: 30vh;
     position: absolute;
   }
   .button-rounded {
-    width: 186px;
-    height: 44px;
-    font-size: 20px;
+    width: 11vw;
+    height: 6vh;
+    font-size: 3vh;
     text-align: center;
     border-radius: 15px;
     background-color: rgba(217, 182, 139, 1);
@@ -55,7 +53,7 @@
     color: #680d0d; /* text color*/
     padding: 0px 20px;
     border: none;
-
+    left: 15%
   }
 
   .button-rounded:hover {
@@ -63,7 +61,7 @@
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1191px) {
-  .checkbox {
+  .menu2 {
     display: none;
   }
   .menu-container {
@@ -74,6 +72,7 @@
     align-items: flex-start;
     flex-direction: column;
     left: 0;
+    z-index: 1;
   }
   .menu-options-frame {
     left: -3px;
@@ -127,52 +126,10 @@
 
 }
 @media only screen and (max-width: 600px) {
-  .checkbox {
-
-    top: 11px;
-    left: 190px;
-    width: 100%;
-    height: 48px;
-    position: absolute;
-    align-self: center;
-  }
-  .btn{
-
-    top: 11px;
-    left: 138px;
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    align-self: center;
-  }
-  #menuToggleButton:checked + label > .menu-options-frame {
-    left: 0;
-    top: 69px;
-    bottom: 46px;
-    width: 360px;
-    height: 245px;
-    overflow: hidden;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: rgb(14, 35, 68);
-  }
-  #menuToggleButton:checked > .menu-options-frame {
-    left: 0;
-    top: 69px;
-    bottom: 46px;
-    width: 360px;
-    height: 245px;
-    overflow: hidden;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    background-color: rgb(14, 35, 68);
-  }
   .menu-container {
     width: 360px;
     height: 245px;
-    display: flex;
+    display:none;
     top: 69px;
     align-items: flex-start;
     flex-direction: column;
@@ -184,7 +141,7 @@
     bottom: 46px;
     width: 360px;
     height: 245px;
-    display: flex;
+    display:none;
     overflow: hidden;
     position: absolute;
     align-items: flex-start;
@@ -196,16 +153,21 @@
     top: 96px;
     left: 41px;
     position: absolute;
+    display:none;
+
   }
   .button-liked {
     top: 174px;
     left: 41px;
     position: absolute;
+    display:none;
+
   }
   .button-connect {
     top: 250px;
     left: 41px;
     position: absolute;
+    display:none;
   }
   .button-rounded {
     width: 279px;
@@ -217,15 +179,152 @@
     margin: 4px 2px;
     cursor: pointer;
     transition-duration: 0.4s;
-    display: inline-block;
+    display: none;
     color: #680d0d; /* text color*/
     padding: 0px 20px;
     border: none;
-    min-width: 0;
+
   }
 
   .button-rounded:hover {
     background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
+  }
+  .button-homeP {
+    top: 56px;
+    left: 23px;
+    position: absolute;
+  }
+  .button-likedP {
+    top: 138px;
+    left: 23px;
+    position: absolute;
+  }
+  .button-connectP {
+    top: 220px;
+    left: 23px;
+    position: absolute;
+  }
+  .button-shake {
+    top: 302px;
+    left: 23px;
+    position: absolute;
+  }
+  .button-roundedP {
+    width: 146px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(217, 182, 139, 1);
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: inline-block;
+    color: #680d0d; /* text color*/
+    padding: 0px 20px;
+    border: none;
+    left:26px;
+
+  }
+
+
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input
+  {
+    display: flex;
+    position: absolute;
+    top: -784px;
+    left: 5px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  #menuToggle span
+  {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+    top: -642px;
+    left:0;
+  }
+
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu
+  {
+    position: absolute;
+    width: 180px;
+    height: 400px;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #800020;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    top: -676px;
+    left:0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
   }
 
 }

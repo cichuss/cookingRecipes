@@ -1,65 +1,170 @@
-.liked-container {
-  width: 100%;
-  display: flex;
-  overflow: auto;
-  min-height: 100%;
-  align-items: center;
-  flex-direction: column;
-}
-.liked-frame43-liked-list04 {
-  width: 100%;
-  height: 1024px;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
-  flex-shrink: 0;
-  justify-content: flex-start;
-  background-color: rgba(217, 182, 139, 1);
-}
+@media only screen and (min-width: 1192px){
+  .liked-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .liked-frame43-liked-list04 {
+    width: 100%;
+    /*height: 950px;*/
+    height: 83.5vh;;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    background-color: rgba(217, 182, 139, 1);
+  }
 
-.connect-text {
-  top: 10px;
-  left: 350px;
-  color: #800020;
-  /*height: auto;*/
-  width: auto;
-  position: absolute;
-  font-size: 25px;
-  font-style: Regular;
-  text-align: center;
-  align-items: center;
-  font-family: Inter;
-}
+  .connect-text {
+    top: 5vh;
+    left: 20vw;
+    color: #800020;
+    /*height: auto;*/
+    width: auto;
+    position: absolute;
+    font-size: 3vh;
+    font-style: Regular;
+    text-align: center;
+    align-items: center;
+    font-family: Inter;
+  }
 
-.liked-rectangle33 {
-  top: 150px;
-  left: 326px;
-  width: 995px;
-  height: 727px;
-  opacity: 0.30;
-  position: absolute;
-}
+  .posters-container {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    margin-left: 20vw;
+    /*margin-bottom: 450px;*/
+    /*overflow-x: scroll;*/
+    overflow-y: auto;
+    flex-wrap: wrap;
+    display: flex;
+    /*padding: 10px;*/
+    gap: 5vh;
+    width: 100%;
+    height: 100%;
+  }
 
-.posters-container {
-  padding-top: 50px;
-  padding-bottom: 10px;
-  margin-left: 330px;
-  /*margin-bottom: 450px;*/
-  /*overflow-x: scroll;*/
-  overflow-y: auto;
-  flex-wrap: wrap;
-  display: flex;
-  /*padding: 10px;*/
-  gap: 10px;
-  width: 100%;
-  height: 1024px;
-}
+  .poster {
+    width: 30vh; /* Width of each poster */
+    height: auto;
+  }
 
-
-.poster {
-  width: 326px; /* Width of each poster */
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1191px){
+  .liked-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .liked-frame43-liked-list04 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    background-color: rgba(217, 182, 139, 1);
+  }
+
+  .connect-text {
+    top: 5vh;
+    left: 25vw;
+    color: #800020;
+    /*height: auto;*/
+    width: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Regular;
+    text-align: center;
+    align-items: center;
+    font-family: Inter;
+  }
+  .posters-container {
+    padding-top: 55vh;
+    margin-left: 25vw;
+    margin-bottom: 50vh;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5vh;
+    width: 100%;
+    height: 1024px;
+  }
+
+  .poster {
+    width: 20vw; /* Width of each poster */
+    height: auto;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .liked-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .liked-frame43-liked-list04 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    background-color: rgba(217, 182, 139, 1);
+  }
+
+  .connect-text {
+    top: 10px;
+    /*left: 350px;*/
+    left: 5%;
+    color: #800020;
+    /*height: auto;*/
+    width: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Regular;
+    text-align: center;
+    align-items: center;
+    font-family: Inter;
+  }
+
+  .posters-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: 17px;
+    /*margin-bottom: 450px;*/
+    /*overflow-x: scroll;*/
+    overflow-y: auto;
+    flex-wrap: wrap;
+    display: flex;
+    /*padding: 10px;*/
+    gap: 10px;
+    width: 100%;
+    height: 1024px;
+  }
+
+  .poster {
+    width: 326px; /* Width of each poster */
+    height: auto;
+  }
+
+}
 
 

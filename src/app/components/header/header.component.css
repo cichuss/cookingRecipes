@@ -112,8 +112,6 @@
     cursor: pointer;
   }
 }
-
-
 @media only screen and (max-width: 600px) {
   .header-container {
     width: 100%;
@@ -125,7 +123,7 @@
   }
   .header-logo-placeholder {
     top: 11px;
-    left: 138px;
+    left: 30px;
     width: 48px;
     height: 48px;
     position: absolute;
@@ -139,7 +137,7 @@
   }
 
   .rounded-button {
-    width: 186px;
+    width: 150px;
     height: 25px;
     background-color: #FFA500;
     color: white; /* text color*/
@@ -151,21 +149,16 @@
     margin: 4px 2px;
     line-height: 25px;
     transition-duration: 0.4s;
-    display: none;
-  }
-
-  .rounded-button-login {
-    top: 28px;
-    right: 143px;
-    position: absolute;
-    display: none;
   }
 
   .rounded-button-user-name {
-    top: 28px;
-    left: 143px;
+    display: none
+  }
+
+  .rounded-button-login {
+    top: 30%;
+    right: 30px;
     position: absolute;
-    display: none;
   }
 
   .rounded-button-login:hover {
@@ -174,7 +167,6 @@
   }
 
 }
-
 
 
 

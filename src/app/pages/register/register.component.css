@@ -3,14 +3,14 @@
     width: 100%;
     display: flex;
     overflow: auto;
-    min-height: 100vh;
+    min-height: 100%;
     align-items: center;
     flex-direction: column;
     background-color: rgba(217, 182, 139, 1);
   }
   .login-frame43-login02 {
     width: 100%;
-    height: 1024px;
+    height: 100vh;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -19,16 +19,16 @@
   }
   .login-login-frame {
     top: 0px;
-    left: 336px;
-    width: 767px;
-    height: 1024px;
+    left: 30%;
+    width: 40vw;
+    height: 100%;
     position: absolute;
   }
   .login-input-confirm-pwd {
-    top: 461px;
-    left: 443px;
-    width: 553px;
-    height: 25px;
+    top: 50vh;
+    left: 35vw;
+    width: 30vw;
+    height: 3vh;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -38,10 +38,10 @@
     background-color: rgba(255, 255, 255, 1);
   }
   .login-input-email {
-    top: 541px;
-    left: 443px;
-    width: 553px;
-    height: 25px;
+    top: 60vh;
+    left: 35vw;
+    width: 30vw;
+    height: 3vh;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -51,12 +51,12 @@
     background-color: rgba(255, 255, 255, 1);
   }
   .login-text {
-    top: 252px;
-    left: 456px;
+    top: 25vh;
+    left: 36vw;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
-    font-size: 40px;
+    font-size: 4vh;
     font-style: Regular;
     text-align: left;
     font-family: Inter;
@@ -66,12 +66,12 @@
     text-decoration: none;
   }
   .login-text2 {
-    top: 332px;
-    left: 456px;
+    top: 35vh;
+    left: 36vw;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
-    font-size: 40px;
+    font-size: 4vh;
     font-style: Regular;
     text-align: left;
     font-family: Inter;
@@ -81,12 +81,12 @@
     text-decoration: none;
   }
   .login-text3 {
-    top: 412px;
-    left: 456px;
+    top: 45vh;
+    left: 36vw;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
-    font-size: 40px;
+    font-size: 4vh;
     font-style: Regular;
     text-align: left;
     font-family: Inter;
@@ -96,12 +96,12 @@
     text-decoration: none;
   }
   .login-text4 {
-    top: 492px;
-    left: 456px;
+    top: 55vh;
+    left: 36vw;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
-    font-size: 40px;
+    font-size: 4vh;
     font-style: Regular;
     text-align: left;
     font-family: Inter;
@@ -111,22 +111,23 @@
     text-decoration: none;
   }
   .error-message {
-    top: 600px;
-    left: 456px;
+    top: 80vh;
+    left: 39%;
+    right: 40%;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
-    font-size: 20px;
+    font-size: 2vh;
     font-style: Regular;
     text-align: center;
     font-family: Inter;
   }
   .login-button-confirm-login {
-    top: 659px;
-    left: 582px;
-    width: 276px;
-    height: 29px;
-    font-size: 20px;
+    top: 70vh;
+    left: 42%;
+    width: 15vw;
+    height: 3vh;
+    font-size: 2vh;
     text-align: center;
     position: absolute;
     align-items: flex-start;
@@ -147,10 +148,10 @@
     background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
   }
   .login-input-pwd {
-    top: 381px;
-    left: 443px;
-    width: 553px;
-    height: 25px;
+    top: 40vh;
+    left: 35vw;
+    width: 30vw;
+    height: 3vh;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -160,10 +161,10 @@
     background-color: rgba(255, 255, 255, 1);
   }
   .login-input-username {
-    top: 301px;
-    left: 443px;
-    width: 553px;
-    height: 25px;
+    top: 30vh;
+    left: 35vw;
+    width: 30vw;
+    height: 3vh;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -186,7 +187,7 @@
   }
   .login-frame43-login02 {
     width: 100%;
-    height: 834px;
+    height: 100vh;
     display: flex;
     overflow: hidden;
     position: relative;
@@ -195,17 +196,17 @@
   }
   .login-login-frame {
     top: 0px;
-    left: 284px;
-    width: 625px;
-    height: 834px;
+    left: 25%;
+    width: 50vw;
+    height: 100%;
     position: absolute;
   }
   .login-button-confirm-login {
-    top: 537px;
-    left: 484px;
-    width: 276px;
-    height: 29px;
-    font-size: 20px;
+    top: 70vh;
+    left: 42%;
+    width: 15vw;
+    height: 3vh;
+    font-size: 2vh;
     text-align: center;
     position: absolute;
     align-items: flex-start;
@@ -226,10 +227,10 @@
     background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
   }
   .login-input-username {
-    top: 250px;
-    left: 371px;
-    width: 451px;
-    height: 25px;
+    top: 30vh;
+    left: 31vw;
+    width: 38vw;
+    height: 3vh;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -239,10 +240,10 @@
     background-color: rgba(255, 255, 255, 1);
   }
   .login-input-pwd {
-    top: 315px;
-    left: 371px;
-    width: 451px;
-    height: 25px;
+    top: 40vh;
+    left: 31vw;
+    width: 38vw;
+    height: 3vh;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -252,10 +253,10 @@
     background-color: rgba(255, 255, 255, 1);
   }
   .login-input-confirm-pwd {
-    top: 380px;
-    left: 371px;
-    width: 451px;
-    height: 25px;
+    top: 50vh;
+    left: 31vw;
+    width: 38vw;
+    height: 3vh;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -265,10 +266,10 @@
     background-color: rgba(255, 255, 255, 1);
   }
   .login-input-email {
-    top: 446px;
-    left: 371px;
-    width: 451px;
-    height: 25px;
+    top: 60vh;
+    left: 31vw;
+    width: 38vw;
+    height: 3vh;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -278,12 +279,12 @@
     background-color: rgba(255, 255, 255, 1);
   }
   .login-text {
-    top: 205px;
-    left: 382px;
+    top: 25vh;
+    left: 32vw;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
-    font-size: 40px;
+    font-size: 4vh;
     font-style: Regular;
     text-align: left;
     font-family: Inter;
@@ -293,12 +294,12 @@
     text-decoration: none;
   }
   .login-text2 {
-    top: 270px;
-    left: 382px;
+    top: 35vh;
+    left: 32vw;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
-    font-size: 40px;
+    font-size: 4vh;
     font-style: Regular;
     text-align: left;
     font-family: Inter;
@@ -308,12 +309,12 @@
     text-decoration: none;
   }
   .login-text3 {
-    top: 336px;
-    left: 382px;
+    top: 45vh;
+    left: 32vw;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
-    font-size: 40px;
+    font-size: 4vh;
     font-style: Regular;
     text-align: left;
     font-family: Inter;
@@ -323,12 +324,12 @@
     text-decoration: none;
   }
   .login-text4 {
-    top: 401px;
-    left: 382px;
+    top: 55vh;
+    left: 32vw;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
-    font-size: 40px;
+    font-size: 4vh;
     font-style: Regular;
     text-align: left;
     font-family: Inter;
@@ -338,18 +339,19 @@
     text-decoration: none;
   }
   .error-message {
-    top: 600px;
-    left: 456px;
+    top: 76vh;
+    left: 30%;
+    right: 30%;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
-    font-size: 20px;
+    font-size: 2vh;
     font-style: Regular;
     text-align: center;
     font-family: Inter;
   }
 }
-
+/*-------------------PHONE-----------------------------------------*/
 @media only screen and (max-width: 600px){
   .login-container {
     width: 100%;
@@ -378,7 +380,7 @@
   }
   .login-button-confirm-login {
     top: 527px;
-    left: 105px;
+    left: 120px;
     width: 111px;
     height: 25px;
     font-size: 18px;
@@ -402,8 +404,8 @@
     background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
   }
   .login-input-username {
-    top: 236px;
-    left: 50px;
+    top: 240px;
+    left: 62px;
     width: 225px;
     height: 20px;
     display: flex;
@@ -416,7 +418,7 @@
   }
   .login-input-pwd {
     top: 297px;
-    left: 50px;
+    left: 62px;
     width: 225px;
     height: 20px;
     display: flex;
@@ -429,7 +431,7 @@
   }
   .login-input-confirm-pwd {
     top: 361px;
-    left: 50px;
+    left: 62px;
     width: 225px;
     height: 20px;
     display: flex;
@@ -442,7 +444,7 @@
   }
   .login-input-email {
     top: 423px;
-    left: 50px;
+    left: 62px;
     width: 225px;
     height: 20px;
     display: flex;
@@ -455,7 +457,7 @@
   }
   .login-text {
     top: 209px;
-    left: 56px;
+    left: 69px;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
@@ -470,7 +472,7 @@
   }
   .login-text2 {
     top: 270px;
-    left: 56px;
+    left: 69px;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
@@ -485,7 +487,7 @@
   }
   .login-text3 {
     top: 331px;
-    left: 56px;
+    left: 69px;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
@@ -500,7 +502,7 @@
   }
   .login-text4 {
     top: 393px;
-    left: 56px;
+    left: 69px;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
@@ -514,8 +516,8 @@
     text-decoration: none;
   }
   .error-message {
-    top: 393px;
-    left: 56px;
+    top: 600px;
+    left: 5px;
     color: rgba(255, 255, 255, 1);
     height: auto;
     position: absolute;
@@ -526,6 +528,5 @@
   }
 
 }
-
 
 
