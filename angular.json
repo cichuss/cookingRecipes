@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularTest2": {
+    "moviematch": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -35,6 +35,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -67,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "AngularTest2:build:production"
+              "buildTarget": "moviematch:build:production"
             },
             "development": {
-              "buildTarget": "AngularTest2:build:development"
+              "buildTarget": "moviematch:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "AngularTest2:build"
+            "buildTarget": "moviematch:build"
           }
         },
         "test": {
