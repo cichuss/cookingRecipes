@@ -1,6 +1,6 @@
 export interface Movie{
   id: number;
   title: string;
-  photoUrl: number;
+  posterUrl: string;
   description: string;
 }
