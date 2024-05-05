@@ -8,6 +8,7 @@ import {MenuComponent} from "./components/menu/menu.component";
 import {ConnectComponent} from "./pages/connect/connect.component";
 import {LikedMoviesComponent} from "./pages/liked-movies/liked-movies.component";
 import {RegisterComponent} from "./pages/register/register.component";
+import {ShakerComponent} from "./pages/shaker/shaker.component";
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'connect', component: ConnectComponent },
       { path: 'liked', component: LikedMoviesComponent },
+      { path: 'shake', component: ShakerComponent },
     ]
   }
 ];
