@@ -10,6 +10,7 @@
       routerLink="/shake"
     />
     <div id="posters-container" class="posters-container">
+      <img *ngFor="let movie of movies" [src]="movie.posterUrl" alt="{{ movie.title }}" class="poster">
     </div>
   </div>
 </div>
