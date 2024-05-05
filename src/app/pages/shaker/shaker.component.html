@@ -7,18 +7,18 @@
       src="assets/img/shakeButton.webp"
       alt="Button Shake"
       class="shake-it-button"
-      routerLink="/shake"
+      (click)="loadMovieData()"
     />
     <div class="movie-container"  onclick="toggleMovieContainer()">
       <div class="home-poster">
         <img
-          src=""
-          alt="Poster"/>
+          [src]="posterUrl"
+          alt="Poster for {{ title }}"/>
       </div>
       <div class="home-info">
         <span class="home-text"><span></span></span>
-        <span class="title"><span>Title</span></span>
-        <span class="description"><span>Synopsis</span></span></div>
+        <span class="title"><span>{{ title }}</span></span>
+        <span class="description"><span>{{synopsis}}</span></span></div>
     </div>
   </div>
 </div>
