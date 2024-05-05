@@ -4,16 +4,16 @@
   <div class="movie-container">
     <div class="home-poster">
       <img
-        src=""
+        src="assets/img/posters/barbie.jpg"
         alt="Poster" class="toggle"/>
     </div>
     <div class="home-info">
       <span class="home-text"><span></span></span>
-      <span class="title"><span>Title</span></span>
-      <span class="description"><span>Synopsis</span></span></div>
+      <span class="title"><span>{{title}}</span></span>
+      <span class="description"><span>{{synopsis}}</span></span></div>
 
-    <i class="fas fa-chevron-right arrow green-arrow"  onclick="loadMovieData()"></i>
-    <i class="fas fa-chevron-left arrow red-arrow"   onclick="loadMovieData()"></i>
+    <i class="fas fa-chevron-right arrow green-arrow"  (click)="loadMovieData()"></i>
+    <i class="fas fa-chevron-left arrow red-arrow"   (click)="loadMovieData()"></i>
   </div>
 
   <img
