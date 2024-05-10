@@ -4,13 +4,15 @@
 <title>Header</title>
 
 <div class="header-container">
+  <div *ngIf="userData">
   <img
-    alt="LogoPlaceholder2714"
-    src="assets/img/Logo-PWM 1.png"
+    alt="Avatar"
+    [src]="userData.avatarUrl"
     class="header-logo-placeholder"
   />
   <button class="rounded-button rounded-button-login" (click)="logout()">Logout</button>
-  <button class="rounded-button rounded-button-user-name" onload="loadUserData()"></button>
+  <button class="rounded-button rounded-button-user-name">{{ userData.username }}</button>
+  </div>
   <div class="header-banner"></div>
 </div>
 </html>
