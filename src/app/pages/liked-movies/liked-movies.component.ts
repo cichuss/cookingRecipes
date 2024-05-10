@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {Movie} from "../../models/movie";
 import {MovieService} from "../../services/movie.service";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {log} from "@angular-devkit/build-angular/src/builders/ssr-dev-server";
 
 @Component({
   selector: 'app-liked-movies',
@@ -17,13 +16,13 @@ export class LikedMoviesComponent implements OnInit{
 
   constructor(
     private movieService: MovieService,
-    private modal: NgbModal
+    private modal: NgbModal,
   ) {}
 
   ngOnInit() {
-    this.movieService.getMovies().subscribe((res: Movie[]) => {
+    this.movieService.getMoviesByCurrentUser().subscribe((res: Movie[]) => {
       this.movies = res;
-      //console.log(this.movies);
+      console.log(this.movies);
       for (let i = 0; i < this.movies.length; i++) {
         this.loadMovieData(i);
         console.log(this.movies[i].posterUrl);
