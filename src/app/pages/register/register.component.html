@@ -22,23 +22,23 @@
         class="login-login-frame"
       />
       <label>
-        <input type="text" placeholder="Username" class="login-input-username" />
+        <input type="text" placeholder="Username" class="login-input-username" [(ngModel)]="username" />
       </label>
       <label>
-        <input type="text" placeholder="Password" class="login-input-pwd" />
+        <input type="text" placeholder="Password" class="login-input-pwd" [(ngModel)]="password"/>
       </label>
       <label>
-        <input type="text" placeholder="Confirm Password" class="login-input-confirm-pwd" />
+        <input type="text" placeholder="Confirm Password" class="login-input-confirm-pwd" [(ngModel)]="confirmPassword"/>
       </label>
       <label>
-        <input type="text" placeholder="Email" class="login-input-email" />
+        <input type="text" placeholder="Email" class="login-input-email" [(ngModel)]="email"/>
       </label>
       <span class="login-text"><span>Username</span></span>
       <span class="login-text2"><span>Password</span></span>
       <span class="login-text3"><span>Confirm Password</span></span>
       <span class="login-text4"><span>Email</span></span>
       <span class="error-message"><span></span></span>
-      <button class="login-button-confirm-login" routerLink="/home">Login</button>
+      <button class="login-button-confirm-login" (click)="register()">Register</button>
     </div>
   </div>
 </div>

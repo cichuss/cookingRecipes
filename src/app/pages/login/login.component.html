@@ -18,15 +18,15 @@
         class="login-login-frame"
       />
       <label>
-        <input type="text" placeholder="Username" class="login-input-username" />
+        <input type="text" placeholder="Username" class="login-input-username" [(ngModel)]="email" />
       </label>
       <span class="login-text"><span>Username</span></span>
       <label>
-        <input type="password" placeholder="Password" class="login-input-pwd" />
+        <input type="password" placeholder="Password" class="login-input-pwd" [(ngModel)]="password" />
       </label>
       <span class="login-text2"><span>Password</span></span>
       <span class="error-message"><span></span></span>
-      <button class="login-button-confirm-login" routerLink="/home">Login</button>
+      <button class="login-button-confirm-login" (click)="login()">Login</button>
     </div>
   </div>
 </div>

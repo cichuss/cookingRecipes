@@ -22,6 +22,8 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import {AngularFireAuthModule} from "@angular/fire/compat/auth";
+import {FormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +46,9 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     provideFirebaseApp(() => initializeApp({"projectId":"movie-match-f7747","appId":"1:1020026463414:web:fe05276f17580b66ff7217","storageBucket":"movie-match-f7747.appspot.com","apiKey":"AIzaSyDio6Vu1R6GMTMaSiQzuMBjaLaPxmTIMQQ","authDomain":"movie-match-f7747.firebaseapp.com","messagingSenderId":"1020026463414"})),
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    AngularFireAuthModule,
+    FormsModule
   ],
   providers: [
     {provide: FIREBASE_OPTIONS, useValue: environment.firebase }
