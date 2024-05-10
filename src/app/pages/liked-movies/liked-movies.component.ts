@@ -9,14 +9,15 @@ import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
   styleUrl: './liked-movies.component.css'
 })
 export class LikedMoviesComponent implements OnInit{
+
   movies:Movie[] = [];
   title: string | undefined;
   synopsis: string | undefined;
-
+  movieId: string | undefined;
 
   constructor(
     private movieService: MovieService,
-    private modal: NgbModal,
+    private modal: NgbModal
   ) {}
 
   ngOnInit() {
@@ -41,5 +42,15 @@ export class LikedMoviesComponent implements OnInit{
         //console.log(url);
       }, error => console.error(error));
     }
+  }
+
+  deleteMovie(movieId: string) {
+    this.movieService.deleteMovieFromCurrentUser(movieId)
+      .then(() => {
+        this.movies = this.movies.filter(movie => movie.id !== movieId);
+      })
+      .catch(error => {
+        console.error('Error while deleting the movie:', error);
+      });
   }
 }

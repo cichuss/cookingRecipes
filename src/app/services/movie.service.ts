@@ -34,7 +34,6 @@ export class MovieService {
           console.log(user)
           return this.afs.collection('userMovies', ref => ref.where('uid', '==', user.uid)).valueChanges();
         } else {
-          console.log("nico")
           return [];
         }
       }),
@@ -52,4 +51,23 @@ export class MovieService {
       map(movies => movies.filter(movie => movie !== undefined) as Movie[])
     );
   }
+
+  deleteMovieFromCurrentUser(movieId: string): Promise<void> {
+    console.log(movieId);
+    return this.afAuth.authState.pipe(
+      switchMap(user => {
+        if (user) {
+          return this.afs.collection('userMovies', ref => ref.where('uid', '==', user.uid).where('movieId', '==', movieId)).get();
+        } else {
+          return [];
+        }
+      }),
+      switchMap(snapshot => {
+        const batch = this.afs.firestore.batch();
+        snapshot.docs.forEach(doc => batch.delete(doc.ref));
+        return batch.commit();
+      })
+    ).toPromise();
+  }
+
 }
