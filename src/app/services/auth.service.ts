@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import {AngularFireAuth} from "@angular/fire/compat/auth";
 import {Router} from "@angular/router";
-import {AngularFireDatabase} from "@angular/fire/compat/database";
+import {AngularFirestore} from "@angular/fire/compat/firestore";
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(private afAuth: AngularFireAuth, private db: AngularFireDatabase, private router: Router) { }
+  constructor(private afAuth: AngularFireAuth, private afs: AngularFirestore, private router: Router) { }
 
   signUp(email: string, password: string, avatarUrl: string | null, username: string) {
     this.afAuth.createUserWithEmailAndPassword(email, password)
@@ -16,9 +16,10 @@ export class AuthService {
         const user = userCredential.user;
         if (user !== null) {
           const { uid } = user;
-          this.db.object(`users/${uid}`).update({ username });
           if (avatarUrl) {
-            this.db.object(`users/${uid}`).update({ avatarUrl });
+            this.afs.collection('users').doc(uid).set({ username, avatarUrl });
+          } else {
+            this.afs.collection('users').doc(uid).set({ username });
           }
           console.log('Registration successful');
           this.router.navigate(['/home']);
