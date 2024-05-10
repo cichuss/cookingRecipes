@@ -33,10 +33,14 @@
       <label>
         <input type="text" placeholder="Email" class="login-input-email" [(ngModel)]="email"/>
       </label>
+      <label>
+        <input type="file" accept="image/*" class="login-input-avatar" (change)="onFileSelected($event)">
+      </label>
       <span class="login-text"><span>Username</span></span>
       <span class="login-text2"><span>Password</span></span>
       <span class="login-text3"><span>Confirm Password</span></span>
       <span class="login-text4"><span>Email</span></span>
+      <span class="avatar"><span>Avatar</span></span>
       <span class="error-message"><span></span></span>
       <button class="login-button-confirm-login" (click)="register()">Register</button>
     </div>

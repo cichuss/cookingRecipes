@@ -50,6 +50,19 @@
     border-radius: 500px;
     background-color: rgba(255, 255, 255, 1);
   }
+  .login-input-avatar {
+    top: 70vh;
+    left: 35vw;
+    width: 30vw;
+    height: 3vh;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 500px;
+    background-color: rgba(255, 255, 255, 1);
+  }
   .login-text {
     top: 25vh;
     left: 36vw;
@@ -110,8 +123,23 @@
     font-stretch: normal;
     text-decoration: none;
   }
+  .avatar {
+    top: 65vh;
+    left: 36vw;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 4vh;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
   .error-message {
-    top: 80vh;
+    top: 90vh;
     left: 39%;
     right: 40%;
     color: rgba(255, 255, 255, 1);
@@ -123,7 +151,7 @@
     font-family: Inter;
   }
   .login-button-confirm-login {
-    top: 70vh;
+    top: 80vh;
     left: 42%;
     width: 15vw;
     height: 3vh;
