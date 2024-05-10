@@ -14,7 +14,7 @@ export class LikedMoviesComponent implements OnInit{
   title: string | undefined;
   synopsis: string | undefined;
   movieId: string | undefined;
-
+  selectedMovieId: string | null = null;
   constructor(
     private movieService: MovieService,
     private modal: NgbModal
@@ -44,6 +44,12 @@ export class LikedMoviesComponent implements OnInit{
     }
   }
 
+  openDeleteMovieDialog(movieId: string) {
+    this.selectedMovieId = movieId;
+  }
+  onDocumentClick() {
+    this.selectedMovieId = null;
+  }
   deleteMovie(movieId: string) {
     this.movieService.deleteMovieFromCurrentUser(movieId)
       .then(() => {

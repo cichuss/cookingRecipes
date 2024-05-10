@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class="liked-container">
+<div class="liked-container" >
   <div class="liked-frame43-liked-list04">
     <span class="connect-text"><span></span></span>
     <img
@@ -10,8 +10,16 @@
       routerLink="/shake"
     />
     <div id="posters-container" class="posters-container">
-      <img *ngFor="let movie of movies" [src]="movie.posterUrl" alt="{{ movie.title }}" class="poster" (click)="deleteMovie(movie.id)">
-    </div>
+      <div *ngFor="let movie of movies">
+        <img
+          [src]="movie.posterUrl"
+          alt="{{ movie.title }}"
+          class="poster"
+          (click)="openDeleteMovieDialog(movie.id)"
+        />
+        <button *ngIf="selectedMovieId === movie.id" class="delete-button" (click)="deleteMovie(movie.id)">Delete {{movie.title}}</button>
+      </div>
   </div>
+</div>
 </div>
 </html>
