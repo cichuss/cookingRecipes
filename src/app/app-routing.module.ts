@@ -5,7 +5,6 @@ import {LoginComponent} from "./pages/login/login.component";
 import {FooterHeaderMenuLayoutComponent} from "./Layouts/footer-header-menu-layout/footer-header-menu-layout.component";
 import {HomeComponent} from "./pages/home/home.component";
 import {MenuComponent} from "./components/menu/menu.component";
-import {ConnectComponent} from "./pages/connect/connect.component";
 import {LikedMoviesComponent} from "./pages/liked-movies/liked-movies.component";
 import {RegisterComponent} from "./pages/register/register.component";
 import {ShakerComponent} from "./pages/shaker/shaker.component";
@@ -19,7 +18,6 @@ const routes: Routes = [
     component: FooterHeaderMenuLayoutComponent,
     children: [
       { path: 'home', component: HomeComponent },
-      { path: 'connect', component: ConnectComponent },
       { path: 'liked', component: LikedMoviesComponent },
       { path: 'shake', component: ShakerComponent },
     ]

@@ -11,7 +11,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterHeaderMenuLayoutComponent } from './Layouts/footer-header-menu-layout/footer-header-menu-layout.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LikedMoviesComponent } from './pages/liked-movies/liked-movies.component';
-import { ConnectComponent } from './pages/connect/connect.component';
 import { ShakerComponent } from './pages/shaker/shaker.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -33,7 +32,6 @@ import {FormsModule} from "@angular/forms";
     FooterHeaderMenuLayoutComponent,
     HomeComponent,
     LikedMoviesComponent,
-    ConnectComponent,
     ShakerComponent,
     FooterComponent,
     MenuComponent,

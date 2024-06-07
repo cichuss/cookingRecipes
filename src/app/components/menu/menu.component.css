@@ -24,19 +24,19 @@
     position: absolute;
     align-items: flex-start;
     flex-shrink: 0;
-    background-color: rgba(217, 4, 22, 1);
+    background-color: #FFD1D1;
   }
 
   .button-home {
-    top: 10vh;
+    top: 4vh;
     position: absolute;
   }
   .button-liked {
-    top: 20vh;
+    top: 14vh;
     position: absolute;
   }
   .button-connect {
-    top: 30vh;
+    top: 24vh;
     position: absolute;
   }
   .button-rounded {
@@ -45,19 +45,19 @@
     font-size: 3vh;
     text-align: center;
     border-radius: 15px;
-    background-color: rgba(217, 182, 139, 1);
-    margin: 4px 2px;
+    background-color: #FFF5E4;
+    margin: 2px 2px;
     cursor: pointer;
     transition-duration: 0.4s;
     display: inline-block;
     color: #680d0d; /* text color*/
-    padding: 0px 20px;
+    padding: 20px 20px;
     border: none;
-    left: 15%
+    left: 12%
   }
 
   .button-rounded:hover {
-    background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
+    background-color: #FF9494; /* Slightly lighter orange color for hover effect */
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1191px) {
