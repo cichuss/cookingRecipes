@@ -20,7 +20,7 @@
     /*top: 50%;*/
     /*bottom: 20%;*/
     /*left: 30%;*/
-    color: rgb(117, 117, 117);
+    color: white;
     /*height: auto;*/
     margin-top: 1.5vh;
     margin-left: 40%;
@@ -28,7 +28,7 @@
     font-size: 2vh;
     /*align-self: center;*/
     /*text-align: left;*/
-    font-family: "Jolly Lodger";
+    /*font-family: "Jolly Lodger";*/
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
@@ -55,7 +55,7 @@
   .footer-text {
     top: 11px;
     left: 624px;
-    color: rgb(117, 117, 117);
+    color: white;
     height: auto;
     margin: auto;
     position: static;
