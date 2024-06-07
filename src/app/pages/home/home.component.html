@@ -12,8 +12,8 @@
       <span class="title"><span>{{title}}</span></span>
       <span class="description"><span>{{desc}}</span></span></div>
 
-    <i class="fas fa-chevron-right arrow green-arrow"  (click)="addDataToFirestore()"></i>
-    <i class="fas fa-chevron-left arrow red-arrow"   (click)="loadRecipeData()"></i>
+    <span class="arrow green-arrow" (click)="addDataToFirestore()">I like it</span>
+    <span class="arrow red-arrow" (click)="loadRecipeData()">Not for me</span>
   </div>
 </div>
 <input type="checkbox" id="toggle" class="visually-hidden">

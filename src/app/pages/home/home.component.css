@@ -77,12 +77,12 @@
   }
 
   .green-arrow {
-    right: 4%;
-    color: green;
+    right: 2%;
+    color: #228B22;
   }
   .red-arrow {
     left: 21%;
-    color: red;
+    color: #DC143C;
   }
 
 }
@@ -161,7 +161,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2vw;
+    font-size: 3vw;
     z-index: 10;
   }
   .green-arrow {
