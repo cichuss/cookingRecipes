@@ -6,7 +6,7 @@
     min-height: 100%;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(217, 182, 139, 1);
+    background-color: #FFF5E4;
   }
   .login-frame43-login02 {
     width: 100%;
@@ -77,8 +77,8 @@
     align-items: flex-start;
     flex-shrink: 0;
     border-radius: 500px;
-    background-color: rgba(217, 182, 139, 1);
-    color: #680d0d;
+    background-color: #D40121;
+    color: #FFF5E4;
     transition-duration: 0.4s;
     border: none;
 
@@ -127,7 +127,7 @@
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(217, 182, 139, 1);
+    background-color: #FFF5E4;
   }
   .login-frame43-login02 {
     width: 100%;
@@ -248,7 +248,7 @@
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(217, 182, 139, 1);
+    background-color: #FFF5E4;
   }
   .login-frame43-login02 {
     width: 100%;
@@ -278,7 +278,7 @@
     flex-shrink: 0;
     border-radius: 500px;
     background-color: rgba(217, 182, 139, 1);
-    color: #680d0d;
+    color: #FF9494;
     transition-duration: 0.4s;
     border: none;
 

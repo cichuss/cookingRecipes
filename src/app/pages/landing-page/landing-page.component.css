@@ -15,37 +15,37 @@
     position: relative;
     align-items: flex-start;
     flex-shrink: 0;
-    background-color: rgba(115, 2, 2, 1);
+    background-color: #FF9494;
   }
   .landing-page-logo-placeholder {
-    top: 74px;
-    left: 118px;
-    width: 438px;
-    height: 438px;
+    top: 198px;
+    left: 218px;
+    width: 738px;
+    height: 738px;
     position: absolute;
   }
   .landing-page-text {
-    top: 45vh;
-    right: 6vw;
-    color: rgba(242, 242, 242, 1);
-    width: 30vw;
+    top: 35vh;
+    right: -5vw;
+    color: #FFF5E4;
+    width: 60vw;
     height: auto;
     position: absolute;
     font-size: 15vh;
     font-style: Regular;
     text-align: left;
-    font-family: Jolly Lodger;
+    /*font-family: Jolly Lodger;*/
     font-weight: 400;
     line-height: normal;
     font-stretch: normal;
     text-decoration: none;
   }
   .rounded-button {
-    top: 70vh;
+    top: 60vh;
     width: 11vw;
     height: 4vh;
-    background-color: #FFA500;
-    color: white; /* text color*/
+    background-color: #D40121;;
+    color: #FFF5E4; /* text color*/
     padding: 0px 20px;
     border: none;
     border-radius: 15px;
@@ -59,12 +59,12 @@
   }
 
   .reounded-button-login {
-    right: 25vw;
+    right: 37vw;
     position: absolute;
   }
 
   .reounded-button-register {
-    right: 9vw;
+    right: 21vw;
     position: absolute;
   }
 }
@@ -86,7 +86,7 @@
     position: relative;
     align-items: flex-start;
     flex-shrink: 0;
-    background-color: rgba(115, 2, 2, 1);
+    background-color: #FF9494;
   }
   .landing-page-background2 {
     top: 0px;
@@ -129,7 +129,7 @@
   .rounded-button {
     width: 186px;
     height: 25px;
-    background-color: #FFA500;
+    background-color: #D40121;
     color: white; /* text color*/
     padding: 0px 20px;
     border: none;
@@ -172,7 +172,7 @@
     position: relative;
     align-items: flex-start;
     flex-shrink: 0;
-    background-color: rgba(115, 2, 2, 1);
+    background-color: #FF9494;
   }
   .landing-page-background2 {
     top: 0px;
@@ -215,7 +215,7 @@
   .rounded-button {
     width: 214px;
     height: 25px;
-    background-color: #FFA500;
+    background-color: #D40121;
     color: white; /* text color*/
     padding: 0px 20px;
     border: none;

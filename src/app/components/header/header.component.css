@@ -19,14 +19,14 @@
     width: 100%;
     height: 100%;
     align-self: center;
-    background-color: #800020;
+    background-color: #FF9494;
   }
 
   .rounded-button {
     width: 186px;
     height: 25px;
-    background-color: #FFA500;
-    color: white; /* text color*/
+    background-color: #FFE3E1;
+    color: #D40121; /* text color*/
     padding: 0px 20px;
     border: none;
     border-radius: 15px;
@@ -51,7 +51,7 @@
   }
 
   .rounded-button-login:hover {
-    background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
+    background-color: #FFD1D1; /* Slightly lighter orange color for hover effect */
     cursor: pointer;
   }
 }
@@ -82,7 +82,7 @@
   .rounded-button {
     width: 186px;
     height: 25px;
-    background-color: #FFA500;
+    background-color: #FFE3E1;
     color: white; /* text color*/
     padding: 0px 20px;
     border: none;
@@ -108,7 +108,7 @@
   }
 
   .rounded-button-login:hover {
-    background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
+    background-color: #FFD1D1; /* Slightly lighter orange color for hover effect */
     cursor: pointer;
   }
 }
@@ -139,7 +139,7 @@
   .rounded-button {
     width: 150px;
     height: 25px;
-    background-color: #FFA500;
+    background-color: #FFE3E1;
     color: white; /* text color*/
     padding: 0px 20px;
     border: none;
@@ -162,7 +162,7 @@
   }
 
   .rounded-button-login:hover {
-    background-color: #ff7f50; /* Slightly lighter orange color for hover effect */
+    background-color: #FFD1D1; /* Slightly lighter orange color for hover effect */
     cursor: pointer;
   }
 

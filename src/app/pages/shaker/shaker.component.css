@@ -20,7 +20,7 @@
     align-items: center;
     flex-shrink: 0;
     justify-content: flex-start;
-    background-color: rgba(217, 182, 139, 1);
+    background-color: #FFF5E4;
   }
   .movie-container {
     position: relative;
@@ -39,7 +39,7 @@
     position: relative;
     align-items: center;
     flex-shrink: 0;
-    background-color: rgba(242, 203, 5, 1);
+    background-color: #FFE3E1;
     padding: 2rem;
     overflow: auto;
     margin: 0 auto;
@@ -52,7 +52,7 @@
     height: auto;
     display: flex;
     flex: 1;
-    background-color: rgba(12, 53, 89, 1);
+    background-color: #FFD1D1;
     object-fit: cover;
   }
   .home-poster img {
@@ -110,7 +110,7 @@
     align-items: center;
     flex-shrink: 0;
     justify-content: flex-start;
-    background-color: rgba(217, 182, 139, 1);
+    background-color: #FFF5E4;
   }
   .movie-container {
     position: relative;
@@ -129,7 +129,7 @@
     position: relative;
     align-items: center;
     flex-shrink: 0;
-    background-color: rgba(242, 203, 5, 1);
+    background-color: #FFE3E1;
     padding: 2rem;
     overflow: auto;
     margin: 0 auto;
@@ -142,7 +142,7 @@
     height: auto;
     display: flex;
     flex: 1;
-    background-color: rgba(12, 53, 89, 1);
+    background-color: #FFD1D1;
     object-fit: cover;
   }
   .home-poster img {
@@ -161,7 +161,7 @@
     align-items: center;
     flex-shrink: 0;
     justify-content: flex-start;
-    background-color: rgba(217, 182, 139, 1);
+    background-color: #FFF5E4;
   }
   .home-text {
     top: 462px;
@@ -184,7 +184,7 @@
   .exit_flip{
     height: 101px;
     width: 360px;
-    background-color: rgba(217, 182, 139, 1);
+    background-color: #FFF5E4;
     bottom:1px;
   }
   .shake-frame43-shake-result05 {
@@ -195,7 +195,7 @@
     position: relative;
     align-items: center;
     flex-shrink: 0;
-    background-color: rgba(217, 182, 139, 1);
+    background-color: #FFF5E4;
   }
   .movie-container {
     position: relative;
@@ -230,7 +230,7 @@
     height: auto;
     display: flex;
     flex: 1;
-    background-color: rgba(12, 53, 89, 1);
+    background-color: #FFD1D1;
     object-fit: cover;
   }
   .home-info{
@@ -254,7 +254,7 @@
     position: relative;
     align-items: center;
     flex-shrink: 0;
-    background-color: rgba(217, 182, 139, 1);
+    background-color: #FFF5E4;
   }
   .home-text {
     color: rgba(255, 255, 255, 1);
