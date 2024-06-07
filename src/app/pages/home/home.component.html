@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <div class="home-frame43-home06">
-  <div class="movie-container">
+  <div class="recipe-container">
     <div class="home-poster" >
       <img
         [src]="posterUrl"
@@ -10,13 +10,11 @@
     <div class="home-info">
       <span class="home-text"><span></span></span>
       <span class="title"><span>{{title}}</span></span>
-      <span class="description"><span>{{synopsis}}</span></span></div>
+      <span class="description"><span>{{desc}}</span></span></div>
 
     <i class="fas fa-chevron-right arrow green-arrow"  (click)="addDataToFirestore()"></i>
-    <i class="fas fa-chevron-left arrow red-arrow"   (click)="loadMovieData()"></i>
+    <i class="fas fa-chevron-left arrow red-arrow"   (click)="loadRecipeData()"></i>
   </div>
-  <!--    <i class="fas fa-chevron-left home-page-back fa-3x red-arrow"   onclick="loadMovieData()"></i>-->
-  <!--    <i class="fas fa-chevron-right home-page-next fa-3x green-arrow"  onclick="loadMovieData()"></i>-->
 </div>
 <input type="checkbox" id="toggle" class="visually-hidden">
 

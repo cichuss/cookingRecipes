@@ -1,12 +1,13 @@
 export const environment = {
   isProduction: false,
   firebase : {
-    apiKey: "AIzaSyDio6Vu1R6GMTMaSiQzuMBjaLaPxmTIMQQ",
-    authDomain: "movie-match-f7747.firebaseapp.com",
-    projectId: "movie-match-f7747",
-    storageBucket: "movie-match-f7747.appspot.com",
-    messagingSenderId: "1020026463414",
-    appId: "1:1020026463414:web:fe05276f17580b66ff7217"
+    apiKey: "AIzaSyD4WQWKHcmW87IZsiRU28g8J5hGondsqak",
+    authDomain: "your-recipes-3338e.firebaseapp.com",
+    projectId: "your-recipes-3338e",
+    storageBucket: "your-recipes-3338e.appspot.com",
+    messagingSenderId: "570183639693",
+    appId: "1:570183639693:web:99c6a8480b412f549e38c4",
+    measurementId: "G-56XPY1B4EM"
   }
 
 };

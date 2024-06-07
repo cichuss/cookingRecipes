@@ -1,4 +1,4 @@
-export interface Movie{
+export interface Recipe {
   id: string;
   title: string;
   posterUrl: string;

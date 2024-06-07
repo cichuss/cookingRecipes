@@ -4,14 +4,14 @@ import {AngularFirestore} from "@angular/fire/compat/firestore";
 @Injectable({
   providedIn: 'root'
 })
-export class LikedMoviesService {
+export class LikedRecipesService {
   constructor(private firestore: AngularFirestore) { }
 
-  async addData(uid: string, movieId: string): Promise<void> {
+  async addData(uid: string, recipeId: string): Promise<void> {
     try {
-      await this.firestore.collection('userMovies').add({
+      await this.firestore.collection('userRecipes').add({
         uid: uid,
-        movieId: movieId
+        recipeId: recipeId
       });
       console.log('Data added to Firestore');
     } catch (error) {

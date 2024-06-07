@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {Movie} from "../../models/movie";
-import {MovieService} from "../../services/movie.service";
+import {Recipe} from "../../models/recipe";
+import {RecipeService} from "../../services/recipe.service";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {AngularFireAuth} from "@angular/fire/compat/auth";
-import {LikedMoviesService} from "../../services/liked-movies.service";
+import {LikedRecipesService} from "../../services/liked-recipes.service";
 
 function getRandomNumber(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -15,34 +15,34 @@ function getRandomNumber(min: number, max: number) {
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit{
-  movies:Movie[] = [];
+  recipes: Recipe[] = [];
   title: string | undefined;
-  synopsis: string | undefined;
+  desc: string | undefined;
   posterUrl: string | undefined;
-  movieId: string | undefined;
+  recipeId: string | undefined;
 
   constructor(
-    private movieService: MovieService,
+    private recipeService: RecipeService,
     private modal: NgbModal,
     private afAuth: AngularFireAuth,
-    private likedMoviesService: LikedMoviesService
+    private likedRecipesService: LikedRecipesService
   ) {}
 
   ngOnInit() {
-    this.movieService.getMovies().subscribe((res: Movie[]) => {
-      this.movies = res;
-      this.loadMovieData();
+    this.recipeService.getRecipes().subscribe((res: Recipe[]) => {
+      this.recipes = res;
+      this.loadRecipeData();
     });
   }
 
-  loadMovieData(){
-    const randomNumber = getRandomNumber(0, this.movies.length-1);
-    this.title = this.movies[randomNumber].title;
-    this.synopsis = this.movies[randomNumber].description;
-    this.movieId = this.movies[randomNumber].id;
+  loadRecipeData(){
+    const randomNumber = getRandomNumber(0, this.recipes.length-1);
+    this.title = this.recipes[randomNumber].title;
+    this.desc = this.recipes[randomNumber].description;
+    this.recipeId = this.recipes[randomNumber].id;
 
-    if (this.movies[randomNumber].posterUrl) {
-      this.movieService.getImageUrl(this.movies[randomNumber].posterUrl).subscribe(url => {
+    if (this.recipes[randomNumber].posterUrl) {
+      this.recipeService.getImageUrl(this.recipes[randomNumber].posterUrl).subscribe(url => {
         this.posterUrl = url;
         console.log(url);
       }, error => console.error(error));
@@ -52,12 +52,12 @@ export class HomeComponent implements OnInit{
     this.afAuth.authState.subscribe(user => {
       if (user) {
         const uid = user.uid;
-        if(this.movieId) {
-        const movieId = this.movieId;
-        this.likedMoviesService.addData(uid, movieId)
+        if(this.recipeId) {
+        const recipeId = this.recipeId;
+        this.likedRecipesService.addData(uid, recipeId)
           .then(() => {
             console.log('Data added to Firestore');
-            this.loadMovieData();
+            this.loadRecipeData();
           })
           .catch(error => console.error('Error while loading to firestore', error));}
       } else {

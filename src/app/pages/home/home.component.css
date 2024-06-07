@@ -2,7 +2,7 @@
   #infoC{
     display: none;
   }
-  .movie-container {
+  .recipe-container {
     position: relative;
     flex-wrap: wrap;
     padding-left: 32vw;
@@ -90,7 +90,7 @@
   #infoC{
     display: none;
   }
-  .movie-container {
+  .recipe-container {
     position: relative;
     flex-wrap: wrap;
     padding-left: 25vw;
@@ -174,7 +174,7 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .movie-container {
+  .recipe-container {
     position: relative;
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;

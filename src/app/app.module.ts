@@ -10,7 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterHeaderMenuLayoutComponent } from './Layouts/footer-header-menu-layout/footer-header-menu-layout.component';
 import { HomeComponent } from './pages/home/home.component';
-import { LikedMoviesComponent } from './pages/liked-movies/liked-movies.component';
+import { LikedRecipesComponent } from './pages/liked-recipes/liked-recipes.component';
 import { ShakerComponent } from './pages/shaker/shaker.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -31,7 +31,7 @@ import {FormsModule} from "@angular/forms";
     HeaderComponent,
     FooterHeaderMenuLayoutComponent,
     HomeComponent,
-    LikedMoviesComponent,
+    LikedRecipesComponent,
     ShakerComponent,
     FooterComponent,
     MenuComponent,
@@ -43,7 +43,7 @@ import {FormsModule} from "@angular/forms";
     NgbModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
-    provideFirebaseApp(() => initializeApp({"projectId":"movie-match-f7747","appId":"1:1020026463414:web:fe05276f17580b66ff7217","storageBucket":"movie-match-f7747.appspot.com","apiKey":"AIzaSyDio6Vu1R6GMTMaSiQzuMBjaLaPxmTIMQQ","authDomain":"movie-match-f7747.firebaseapp.com","messagingSenderId":"1020026463414"})),
+    // provideFirebaseApp(() => initializeApp({"projectId":"movie-match-f7747","appId":"1:1020026463414:web:fe05276f17580b66ff7217","storageBucket":"movie-match-f7747.appspot.com","apiKey":"AIzaSyDio6Vu1R6GMTMaSiQzuMBjaLaPxmTIMQQ","authDomain":"movie-match-f7747.firebaseapp.com","messagingSenderId":"1020026463414"})),
     AngularFireStorageModule,
     AngularFireAuthModule,
     FormsModule

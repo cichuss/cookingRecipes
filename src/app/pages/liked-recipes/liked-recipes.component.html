@@ -5,14 +5,14 @@
     <span class="connect-text"><span></span></span>
 
     <div id="posters-container" class="posters-container">
-      <div *ngFor="let movie of movies">
+      <div *ngFor="let recipe of recipes">
         <img
-          [src]="movie.posterUrl"
-          alt="{{ movie.title }}"
+          [src]="recipe.posterUrl"
+          alt="{{ recipe.title }}"
           class="poster"
-          (click)="openDeleteMovieDialog(movie.id)"
+          (click)="openDeleteRecipeDialog(recipe.id)"
         />
-        <button *ngIf="selectedMovieId === movie.id" class="delete-button" (click)="deleteMovie(movie.id)">Delete {{movie.title}}</button>
+        <button *ngIf="selectedRecipeId === recipe.id" class="delete-button" (click)="deleteRecipe(recipe.id)">Delete {{recipe.title}}</button>
       </div>
   </div>
 </div>

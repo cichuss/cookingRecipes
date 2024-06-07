@@ -22,7 +22,7 @@
     justify-content: flex-start;
     background-color: #FFF5E4;
   }
-  .movie-container {
+  .recipe-container {
     position: relative;
     flex-wrap: wrap;
     padding-left: 32vw;
@@ -112,7 +112,7 @@
     justify-content: flex-start;
     background-color: #FFF5E4;
   }
-  .movie-container {
+  .recipe-container {
     position: relative;
     flex-wrap: wrap;
     padding-left: 25vw;
@@ -197,7 +197,7 @@
     flex-shrink: 0;
     background-color: #FFF5E4;
   }
-  .movie-container {
+  .recipe-container {
     position: relative;
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;

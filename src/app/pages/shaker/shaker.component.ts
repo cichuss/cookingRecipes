@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Movie} from "../../models/movie";
-import {MovieService} from "../../services/movie.service";
+import {Recipe} from "../../models/recipe";
+import {RecipeService} from "../../services/recipe.service";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 function getRandomNumber(min: number, max: number) {
@@ -13,30 +13,30 @@ function getRandomNumber(min: number, max: number) {
 })
 
 export class ShakerComponent implements OnInit{
-  movies:Movie[] = [];
+  recipes:Recipe[] = [];
   title: string | undefined;
   synopsis: string | undefined;
   posterUrl: string | undefined;
 
   constructor(
-    private movieService: MovieService,
+    private recipeService: RecipeService,
     private modal: NgbModal
   ) {}
 
   ngOnInit() {
-    this.movieService.getMovies().subscribe((res: Movie[]) => {
-      this.movies = res;
-      this.loadMovieData();
+    this.recipeService.getRecipes().subscribe((res: Recipe[]) => {
+      this.recipes = res;
+      this.loadRecipeData();
     });
   }
 
-  loadMovieData(){
-    const randomNumber = getRandomNumber(0, this.movies.length-1);
-    this.title = this.movies[randomNumber].title;
-    this.synopsis = this.movies[randomNumber].description;
+  loadRecipeData(){
+    const randomNumber = getRandomNumber(0, this.recipes.length-1);
+    this.title = this.recipes[randomNumber].title;
+    this.synopsis = this.recipes[randomNumber].description;
 
-    if (this.movies[randomNumber].posterUrl) {
-      this.movieService.getImageUrl(this.movies[randomNumber].posterUrl).subscribe(url => {
+    if (this.recipes[randomNumber].posterUrl) {
+      this.recipeService.getImageUrl(this.recipes[randomNumber].posterUrl).subscribe(url => {
         this.posterUrl = url;
         console.log(url);
       }, error => console.error(error));
