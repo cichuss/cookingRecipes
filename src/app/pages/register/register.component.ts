@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import {AngularFireStorage} from "@angular/fire/compat/storage";
 import {finalize} from "rxjs";
+import {Performance} from "@angular/fire/performance";
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
+  private performance = inject(Performance);
   username: string = '';
   email: string = '';
   password: string = '';

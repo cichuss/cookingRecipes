@@ -1,7 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {Recipe} from "../../models/recipe";
 import {RecipeService} from "../../services/recipe.service";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {Performance} from "@angular/fire/performance";
 
 @Component({
   selector: 'app-liked-recipes',
@@ -9,7 +10,7 @@ import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
   styleUrl: './liked-recipes.component.css'
 })
 export class LikedRecipesComponent implements OnInit{
-
+  private performance = inject(Performance);
   recipes: Recipe[] = [];
   title: string | undefined;
   desc: string | undefined;

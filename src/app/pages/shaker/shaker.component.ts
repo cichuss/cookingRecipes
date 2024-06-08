@@ -1,7 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {Recipe} from "../../models/recipe";
 import {RecipeService} from "../../services/recipe.service";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {Performance} from "@angular/fire/performance";
 
 function getRandomNumber(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -13,6 +14,7 @@ function getRandomNumber(min: number, max: number) {
 })
 
 export class ShakerComponent implements OnInit{
+  private performance = inject(Performance);
   recipes:Recipe[] = [];
   title: string | undefined;
   synopsis: string | undefined;
